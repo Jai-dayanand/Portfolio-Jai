@@ -1,0 +1,971 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<title>Jai Dayanand</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="icon" href="images/Jai.jpg" type="image/jpg" />
+
+	<link rel="stylesheet" href="assets/css/main.css" />
+
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<style>
+		.tabs {
+			display: flex;
+			cursor: pointer;
+			margin-bottom: 20px;
+		}
+
+		.tab {
+			padding: 10px 20px;
+			border: 1px solid #555;
+			/* Dark grey border */
+			border-bottom: none;
+			background-color: #333;
+			/* Dark grey inactive tab background */
+			color: #fff;
+			/* White text color */
+			margin-right: 5px;
+			transition: background-color 0.3s;
+		}
+
+		.tab.active {
+			background-color: #007bff;
+			/* Blue active tab background */
+			border-bottom: 1px solid #007bff;
+			/* Match active tab background */
+			color: #fff;
+			/* White text color */
+		}
+
+		.tab:hover {
+			background-color: #444;
+			/* Slightly lighter grey for hover */
+		}
+
+		.tab-content {
+			border: 1px solid #555;
+			/* Dark grey border */
+			padding: 20px;
+			display: none;
+			background-color: #222;
+			/* Darker grey background for content */
+			color: #fff;
+			/* White text color */
+		}
+
+		.tab-content.active {
+			display: block;
+		}
+
+		.image.main img {
+			max-width: 100%;
+			height: auto;
+		}
+
+		/* Basic reset and styling for the accordion */
+
+
+		article {
+			width: 100%;
+			max-width: 800px;
+			margin: auto;
+			padding: 20px;
+		}
+
+		.major {
+			font-size: 24px;
+			margin-bottom: 20px;
+		}
+
+		.accordion {
+			width: 100%;
+		}
+
+		.accordion-item {
+			margin-bottom: 10px;
+			border-radius: 8px;
+			overflow: hidden;
+		}
+
+		.accordion-header {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			background-color: #333;
+			/* Dark grey background */
+			color: #fff;
+			/* White text */
+			padding: 15px;
+			border: none;
+			font-size: 16px;
+			cursor: pointer;
+			outline: none;
+			transition: background-color 0.3s, color 0.3s;
+			width: 100%;
+			text-align: left;
+		}
+
+		.accordion-header:hover {
+			background-color: #444;
+			/* Slightly lighter grey on hover */
+		}
+
+		.accordion-icon {
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			margin-right: 10px;
+		}
+
+		.accordion-arrow {
+			font-size: 18px;
+			transition: transform 0.3s;
+		}
+
+		.accordion-content {
+			max-height: 0;
+			overflow: auto;
+			/* Enable scrolling */
+			background-color: #444;
+			/* Dark grey background */
+			color: #fff;
+			/* White text */
+			padding: 0 15px;
+			transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+			height: 200px;
+			/* Set a fixed height for scrolling */
+		}
+
+		.accordion-content h3 {
+			margin-top: 15px;
+			margin-bottom: 5px;
+		}
+
+		.accordion-content p {
+			margin: 0;
+			line-height: 1.6;
+		}
+
+		.accordion-item.active .accordion-content {
+			max-height: 300px;
+			/* Adjust based on content size */
+			padding: 15px;
+		}
+
+		.accordion-item.active .accordion-arrow {
+			transform: rotate(180deg);
+			/* Rotate arrow when active */
+		}
+	</style>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<div class="logo" style="display: flex; align-items: center; justify-content: center; margin-right: 10px;">
+				<i class="fas fa-globe" style="font-size: 70px; color: #fff;"></i>
+			</div>
+
+			<div class="content">
+				<div class="inner">
+					<h1>Jai Dayanand</h1>
+					<p style="text-align: center; max-width: 75%; margin: 0 auto;">
+						Blending tech curiosity, coding skills, and academic insight to craft innovative digital
+						solutions.
+						Passionate about exploring new technologies and trends. Currently navigating the intersection of
+						web development and strategic communication as a student.
+					</p>
+				</div>
+			</div>
+			<nav>
+				<ul class="nav-menu">
+					<li><a href="#intro">Intro</a></li>
+					<li><a href="#background">Background</a></li>
+					<li><a href="#projects" style="margin-right: 7px;;">Projects</a></li>
+					<li><a href="#exp">Experience</a></li>
+					<li><a href="#about">Resume</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+
+			</nav>
+		</header>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Intro -->
+			<article id="intro">
+				<h2 class="major">Intro</h2>
+				<span class="image main"><img src="images/Introbanner.png" alt="" /></span>
+				<p style="text-align: justify; max-width: 90%; margin: 0 auto;">
+					I am currently pursuing dual degrees in Computer Science and Data Science, with a major focus in
+					Computer Science. This academic path reflects my deep-rooted passion for technology and data-driven
+					solutions. Alongside my technical pursuits, I have a profound interest in marketing and public
+					relations, recognizing their crucial role in bridging technology with user engagement and market
+					trends.
+				</p>
+				<br>
+				<p style="text-align: justify; max-width:90%; margin: 0 auto;">
+					I am eager to immerse myself in innovative projects and collaborate within dynamic teams that drive
+					technological advancement. My enthusiasm for learning and adapting swiftly to new challenges
+					empowers me to contribute effectively in ever-evolving environments. As a dedicated team player, I
+					am committed to leveraging my education and skills to make impactful contributions to both the
+					technical and marketing spheres.
+				</p>
+				<br>
+				<p style="text-align: justify; max-width: 90%; margin: 0 auto;">
+					My goal is to harness my interdisciplinary knowledge and hands-on experience to create solutions
+					that are not only technologically advanced but also aligned with strategic market objectives. I am
+					confident in my ability to excel in a fast-paced tech landscape and look forward to opportunities
+					where I can apply my skills to drive meaningful progress and success.
+				</p>
+
+			</article>
+
+			<!--Background-->
+			<article id="background">
+				<h2 class="major">Background</h2>
+				<div style="position: relative; max-width: 600px; margin: 0 auto;">
+					<div
+						style="content: ''; position: absolute; width: 4px; background-color: grey; top: 0; bottom: 0; left: 50%; margin-left: -2px;">
+					</div>
+
+					<div
+						style="padding: 10px 20px; position: relative; background-color: inherit; width: 50%; left: 0;">
+						<div
+							style="content: ' '; height: 0; position: absolute; top: 18px; width: 0; z-index: 1; left: 20px; border: medium solid grey; border-width: 8px 8px 8px 0; border-color: transparent grey transparent transparent;">
+						</div>
+						<div
+							style="padding: 15px 20px; background-color: grey; color: black; position: relative; border-radius: 6px;">
+							<h2>High School</h2>
+							<div style="display: flex; justify-content: space-between; margin: 0;">
+								<p style="margin: 0;">Thankur International School.<br>
+									Mumbai - 400067
+								</p>
+							</div>
+
+							<ul style="margin: 0; padding-left: 20px;">
+								<li>
+									<a href="https://www.tismumbai.in/">Thakur international school</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+
+					<div
+						style="padding: 10px 20px; position: relative; background-color: inherit; width: 50%; left: 50%;">
+						<div
+							style="content: ' '; height: 0; position: absolute; top: 18px; width: 0; z-index: 1; right: 20px; border: medium solid grey; border-width: 8px 0 8px 8px; border-color: transparent transparent transparent grey;">
+						</div>
+						<div
+							style="padding: 15px 20px; background-color: grey; color: black; position: relative; border-radius: 6px;">
+							<h2>Jr College</h2>
+							<p style="margin: 0;">
+								Allen Career Institute associated with Jr college MKKVVIV.
+							</p>
+							<ul style="margin: 0; padding-left: 20px;">
+								<li>
+									<a
+										href="https://www.allen.ac.in/mumbai/?utm_source=Organic&utm_medium=GMB">Allen</a>
+								</li>
+								<li>
+									<a href="https://mkvvivschool.in/">MKVVIV</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div
+						style="padding: 10px 20px; position: relative; background-color: inherit; width: 50%; left: 0;">
+						<div
+							style="content: ' '; height: 0; position: absolute; top: 18px; width: 0; z-index: 1; left: 20px; border: medium solid grey; border-width: 8px 8px 8px 0; border-color: transparent grey transparent transparent;">
+						</div>
+						<div
+							style="padding: 15px 20px; background-color: grey; color: black; position: relative; border-radius: 6px;">
+							<h2>College</h2>
+							<div style="display: flex; justify-content: space-between; margin: 0;">
+								<p style="margin: 0;">Mukesh Patel School of Technology Management & Engineering, Mumbai
+
+								</p>
+							</div>
+
+							<ul style="margin: 0; padding-left: 20px;">
+								<li>
+									<a href="https://engineering.nmims.edu/">NMIMS MPSTME</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</article>
+
+
+			<!--Expereince-->
+			<!DOCTYPE html>
+			<html lang="en">
+
+			<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<title>Experience Accordion</title>
+				<link rel="stylesheet" href="styles.css">
+			</head>
+
+			<body>
+				<article id="exp">
+					<h2 class="major">Experience</h2>
+					<div class="accordion">
+						<div class="accordion-item">
+							<button class="accordion-header">
+								<img src="images/Headstarter.jpeg" alt="Company 1" class="accordion-icon">
+								<span>Headstarter AI</span>
+								<span class="accordion-arrow">&#9662;</span>
+							</button>
+
+							<div class="accordion-content">
+								<h3>Software Engineer Fellowship (July 2024 - Present)</h3>
+								<a href="https://headstarter.co/" style="color: red;">Headstarter AI</a>
+
+								<p style="text-align: justify;">As a Software Engineer Fellow at Headstarter, I
+									collaborate with cross-functional teams to design and develop web applications,
+									gaining hands-on experience with technologies like Bootstrap, NextJS, tailwaindcss
+									etc. I actively participate in Agile processes, tackle complex challenges, and
+									benefit from mentorship by industry experts, all of which are significantly
+									enhancing my technical skills and teamwork abilities.</p>
+
+							</div>
+						</div>
+						<div class="accordion-item">
+							<button class="accordion-header">
+								<img src="images/IEC.jpg" alt="Company 2" class="accordion-icon">
+								<span>Innovation and Entrepreneurship Cell</span>
+								<span class="accordion-arrow">&#9662;</span>
+							</button>
+							<div class="accordion-content">
+								<h3>Head of Public relations (July 2022 - Present) </h3>
+								<a href="https://iecnmims.com/" style="color: red;">IEC MPSTME</a>
+
+								<p style="text-align: justify;">I have been in the IEC since my first year of college
+									and have been a part of the Public relations team. I meticulously orchestrated
+									events centered around innovation and entrepreneurship. Utilizing my strong public
+									speaking and communication skills, I effectively promoted and amplified awareness
+									for upcoming events, contributing to their success and fostering a culture of
+									innovation within the community. </p>
+							</div>
+						</div>
+
+						<div class="accordion-item">
+							<button class="accordion-header">
+								<img src="images/INSEED.png" alt="Company 3" class="accordion-icon">
+								<span>INSEED Organisation</span>
+								<span class="accordion-arrow">&#9662;</span>
+							</button>
+							<div class="accordion-content">
+								<h3>Social Internship (May 2023 - July 2023)</h3>
+								<a href="https://inseed.org/" style="color: red;">INSEED Organisation</a>
+								<p style="text-align: justify;">Passionate about fostering positive change, I provided
+									basic STEM education to
+									underprivileged children. Additionally, I actively participated in raising awareness
+									about
+									the detrimental effects of plastic on our environment, striving to create a
+									sustainable and
+									eco-friendly future.</p>
+							</div>
+						</div>
+
+						<div class="accordion-item">
+							<button class="accordion-header">
+								<img src="images/RAS.jpeg" alt="Company 3" class="accordion-icon">
+								<span>Robotics And Automation Society</span>
+								<span class="accordion-arrow">&#9662;</span>
+							</button>
+							<div class="accordion-content">
+								<h3>PR Sub - Head </h3>
+								<a href="https://www.linkedin.com/company/ras-mpstme/?originalSubdomain=in"
+									style="color: red;">RAS</a>
+
+								<p style="text-align: justify;">As a committee member of the Robotics and Automation
+									Society, I served as the PR sub
+									head for the event Tech-no-logic. My role involved attracting a large audience and
+									ensuring high footfall. The event showcased advanced technologies such as AR/VR, an
+									in-real-life Rocket League, and a hydraulic maze, making it highly engaging for
+									participants. .</p>
+							</div>
+						</div>
+
+						<div class="accordion-item">
+							<button class="accordion-header">
+								<img src="images/4C.jpeg" alt="Company 3" class="accordion-icon">
+								<span>4C NMIMS</span>
+								<span class="accordion-arrow">&#9662;</span>
+							</button>
+							<div class="accordion-content">
+								<h3>PR Executive</h3>
+								<a href="https://www.linkedin.com/company/4c-nmims/?originalSubdomain=inhttps://www.linkedin.com/company/4c-nmims/?originalSubdomain=in"
+									style="color: red;">4C NMIMS</a>
+
+								<p style="text-align: justify;">As a PR Executive for 4C NMIMS, I played a pivotal role
+									in shaping the organization’s public image and outreach strategies. I collaborated
+									with team members to craft compelling communication plans, managed media relations,
+									and spearheaded initiatives that enhanced brand visibility. My efforts contributed
+									to increased engagement and the successful execution of events that resonated with
+									our target audience.</p>
+							</div>
+						</div>
+
+
+					</div>
+				</article>
+				<script src="scripts.js"></script>
+			</body>
+
+			</html>
+
+
+
+			<script>
+				document.querySelectorAll('.accordion-header').forEach(header => {
+					header.addEventListener('click', function () {
+						const item = this.parentElement;
+						const content = item.querySelector('.accordion-content');
+						const arrow = this.querySelector('.accordion-arrow');
+
+						if (item.classList.contains('active')) {
+							item.classList.remove('active');
+							content.style.maxHeight = 0;
+						} else {
+							document.querySelectorAll('.accordion-item').forEach(el => {
+								el.classList.remove('active');
+								el.querySelector('.accordion-content').style.maxHeight = 0;
+							});
+							item.classList.add('active');
+							content.style.maxHeight = content.scrollHeight + 'px';
+						}
+					});
+				});
+
+
+			</script>
+
+
+
+			<!-- Work -->
+			<article id="projects">
+				<h2 class="major">Projects</h2>
+				<div
+					style="overflow-x: auto; white-space: nowrap; background-color: rgba(0, 0, 0, 0.8); padding: 10px; border-radius: 8px;">
+					<div style="display: flex;">
+						<div style="display: inline-block; padding: 10px 20px; margin-right: 5px; cursor: pointer; color: #fff; background-color: rgba(51, 51, 51, 0.8); border: 1px solid rgba(68, 68, 68, 0.8); border-radius: 8px;"
+							onclick="showTabContent('work1')">
+							Chasten Rubber Product
+						</div>
+						<div style="display: inline-block; padding: 10px 20px; margin-right: 5px; cursor: pointer; color: #fff; background-color: rgba(51, 51, 51, 0.8); border: 1px solid rgba(68, 68, 68, 0.8); border-radius: 8px;"
+							onclick="showTabContent('work2')">
+							Travel Planner
+						</div>
+						<div style="display: inline-block; padding: 10px 20px; margin-right: 5px; cursor: pointer; color: #fff; background-color: rgba(51, 51, 51, 0.8); border: 1px solid rgba(68, 68, 68, 0.8); border-radius: 8px;"
+							onclick="showTabContent('work3')">
+							Student Ranking System
+						</div>
+						<div style="display: inline-block; padding: 10px 20px; margin-right: 5px; cursor: pointer; color: #fff; background-color: rgba(51, 51, 51, 0.8); border: 1px solid rgba(68, 68, 68, 0.8); border-radius: 8px;"
+							onclick="showTabContent('work4')">
+							Library Management System
+						</div>
+						<div style="display: inline-block; padding: 10px 20px; margin-right: 5px; cursor: pointer; color: #fff; background-color: rgba(51, 51, 51, 0.8); border: 1px solid rgba(68, 68, 68, 0.8); border-radius: 8px;"
+							onclick="showTabContent('work5')">
+							Banking System
+						</div>
+
+					</div>
+				</div>
+
+				<div id="work1" class="tab-content active">
+					<div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px;">
+						<a href="https://chastenrubberproducts.com/"
+							style="display: block; width: 300px; border: 1px solid #ccc; border-radius: 8px; overflow: hidden; text-decoration: none; color: inherit; transition: transform 0.2s, box-shadow 0.2s;">
+							<img src="images/Chasten.png" alt="Project Preview"
+								style="width: 100%; height: 200px; object-fit: cover;">
+							<div style="padding: 10px;">
+								<p style="color: #ffffff;">Live Website for Chasten Rubber Product. Click to view!</p>
+							</div>
+						</a>
+					</div>
+					<p style="text-align: justify; padding: 15px; color: #ffffff;">
+						Created a streamlined website for Chasten Rubber, featuring an attractive design and clear
+						product details
+						to enhance user experience and showcase their rubber product.
+					</p>
+				</div>
+
+				<div id="work2" class="tab-content">
+					<span class="image main">
+						<a href="https://github.com/Jai-dayanand/Travel-Planner-Website-" target="_blank"
+							style="display: inline-block; padding: 10px 20px; background-color: rgba(0, 123, 255, 0.8); color: white; text-align: center; border-radius: 8px; text-decoration: none; font-size: 16px; font-weight: bold; transition: background-color 0.3s, transform 0.3s;"
+							onmouseover="this.style.backgroundColor='rgba(0, 86, 179, 0.8)'; this.style.transform='scale(1.05)';"
+							onmouseout="this.style.backgroundColor='rgba(0, 123, 255, 0.8)'; this.style.transform='scale(1)';">
+							View Project
+						</a>
+					</span>
+					<p style="color: #ffffff;">
+						Created a Travel Planner website to help users organize trips with features for itinerary
+						management and
+						destination recommendations.
+					</p>
+				</div>
+
+				<div id="work3" class="tab-content">
+					<span class="image main">
+						<a href="https://github.com/Jai-dayanand/Student-Ranking-System" target="_blank"
+							style="display: inline-block; padding: 10px 20px; background-color: rgba(0, 123, 255, 0.8); color: white; text-align: center; border-radius: 8px; text-decoration: none; font-size: 16px; font-weight: bold; transition: background-color 0.3s, transform 0.3s;"
+							onmouseover="this.style.backgroundColor='rgba(0, 86, 179, 0.8)'; this.style.transform='scale(1.05)';"
+							onmouseout="this.style.backgroundColor='rgba(0, 123, 255, 0.8)'; this.style.transform='scale(1)';">
+							View Project
+						</a>
+					</span>
+					<p style="color: #ffffff;">
+						A Python-based project for managing student rankings. It offers real-time data updates through
+						dynamic
+						queries and features an intuitive interface for sorting and filtering student performance.
+					</p>
+				</div>
+
+				<div id="work4" class="tab-content">
+					<span class="image main">
+						<a href="https://github.com/Jai-dayanand/Library-management-system" target="_blank"
+							style="display: inline-block; padding: 10px 20px; background-color: rgba(0, 123, 255, 0.8); color: white; text-align: center; border-radius: 8px; text-decoration: none; font-size: 16px; font-weight: bold; transition: background-color 0.3s, transform 0.3s;"
+							onmouseover="this.style.backgroundColor='rgba(0, 86, 179, 0.8)'; this.style.transform='scale(1.05)';"
+							onmouseout="this.style.backgroundColor='rgba(0, 123, 255, 0.8)'; this.style.transform='scale(1)';">
+							View Project
+						</a>
+					</span>
+					<p style="color: #ffffff;">
+						A Java-based project for managing library operations, allowing users to browse books, check them
+						out, and
+						manage accounts, while administrators can handle book inventory and user requests.
+					</p>
+				</div>
+				<div id="work5" class="tab-content">
+					<span class="image main">
+						<a href="https://github.com/Jai-dayanand/Banking-System" target="_blank"
+							style="display: inline-block; padding: 10px 20px; background-color: rgba(0, 123, 255, 0.8); color: white; text-align: center; border-radius: 8px; text-decoration: none; font-size: 16px; font-weight: bold; transition: background-color 0.3s, transform 0.3s;"
+							onmouseover="this.style.backgroundColor='rgba(0, 86, 179, 0.8)'; this.style.transform='scale(1.05)';"
+							onmouseout="this.style.backgroundColor='rgba(0, 123, 255, 0.8)'; this.style.transform='scale(1)';">
+							View Project
+						</a>
+					</span>
+					<p style="color: #ffffff;">
+						This C++ project is a Bank Management System that allows users to create and manage accounts, deposit and withdraw funds and check balances.It has external library being used to store data in JSON while working on CSS. It features an intuitive interface for basic banking operations, ensuring a user-friendly experience. The system also includes functionalities for updating account details and closing accounts securely. It's a robust application that demonstrates skills in object-oriented programming and managing data operations.
+
+
+
+					</p>
+				</div>
+			</article>
+
+
+
+			<script>
+				function showTabContent(id) {
+					var i, tabcontent, tablinks;
+
+					tabcontent = document.getElementsByClassName("tab-content");
+					for (i = 0; i < tabcontent.length; i++) {
+						tabcontent[i].style.display = "none";
+						tabcontent[i].classList.remove("active");
+					}
+
+					tablinks = document.getElementsByClassName("tab");
+					for (i = 0; i < tablinks.length; i++) {
+						tablinks[i].classList.remove("active");
+					}
+
+					document.getElementById(id).style.display = "block";
+					document.getElementById(id).classList.add("active");
+					event.currentTarget.classList.add("active");
+				}
+			</script>
+
+			<!-- About -->
+			<article id="about">
+				<h2 class="major">Resume</h2>
+				<span
+					style="display: block; margin-bottom: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #f0f0f0;">
+					<p
+						style="font-size: 18px; line-height: 1.6; margin: 0; padding: 10px; background-color: #333; border-radius: 5px;">
+						Download my resume to learn more about my background and skills.<br>
+						Feel free to reach out if you have any questions or opportunities!
+					</p>
+				</span>
+
+
+
+				<a href="Resume_jai.pdf" download="Resume_jai.pdf"
+					style="display: block; width: max-content; margin: 0 auto; padding: 10px 20px; background-color: #007bff; color: white; text-align: center; border-radius: 5px; text-decoration: none; font-size: 16px; font-weight: bold; transition: background-color 0.3s, transform 0.3s;"
+					onmouseover="this.style.backgroundColor='#0056b3'; this.style.transform='scale(1.05)';"
+					onmouseout="this.style.backgroundColor='#007bff'; this.style.transform='scale(1)';">
+					Download Resume
+				</a>
+
+			</article>
+
+			<article id="contact" style="background-color: #000; padding: 20px;">
+				<h2 class="major" style="color: #fff;">Contact</h2>
+
+				<ul style="list-style: none; padding: 0; margin: 0;">
+					<li style="margin: 10px 0; display: flex; align-items: center;">
+						<div class="icons">
+							<a href="mailto:dayanandjai99@gmail.com" class="icon fas fa-envelope"
+								style="text-decoration: none; color: #fff; margin-right: 10px; font-size: 24px; border: none; background: none;"
+								aria-label="Mail">
+								<span class="label" style="display: none;">Email</span>
+							</a>
+
+						</div>
+						<a href="mailto:dayanandjai99@gmail.com" style="color: #fff;">
+							Email
+						</a>
+					</li>
+
+
+
+					<li style="margin: 10px 0; display: flex; align-items: center;">
+						<div class="icons">
+							<a href="https://wa.me/qr/QZB2K6VTWMN7O1" class="icon brands fa-whatsapp"
+								style="text-decoration: none; color: #fff; margin-right: 10px; font-size: 24px; border: none; background: none;"
+								aria-label="WhatsApp">
+								<span class="label" style="display: none;">WhatsApp</span>
+							</a>
+
+						</div>
+						<a href="https://wa.me/qr/QZB2K6VTWMN7O1" style="color: #fff;">
+							WhatsApp
+						</a>
+					</li>
+					<li style="margin: 10px 0; display: flex; align-items: center;">
+						<div class="icons">
+							<a href="https://www.linkedin.com/in/jai-dayanand-bb2265249/"
+								class="icon brands fa-linkedin"
+								style="text-decoration: none; color: #fff; margin-right: 10px; font-size: 24px; border: none; background: none;"
+								aria-label="LinkedIn">
+								<span class="label" style="display: none;">LinkedIn</span>
+							</a>
+						</div>
+						<a href="https://www.linkedin.com/in/jai-dayanand-bb2265249/" style="color: #fff;">
+							LinkedIn
+						</a>
+					</li>
+					<li style="margin: 10px 0; display: flex; align-items: center;">
+						<div class="icons">
+							<a href="https://www.instagram.com/jai__1105?igsh=eGxqcHEzMjdidWJv"
+								class="icon brands fa-instagram"
+								style="text-decoration: none; color: #fff; margin-right: 10px; font-size: 24px; border: none; background: none;"
+								aria-label="Instagram">
+								<span class="label" style="display: none;">Instagram</span>
+							</a>
+						</div>
+						<a href="https://www.instagram.com/jai__1105?igsh=eGxqcHEzMjdidWJv" style="color: #fff;">
+							Instagram
+						</a>
+					</li>
+					<li style="margin: 10px 0; display: flex; align-items: center;">
+						<div>
+							<a href="https://github.com/Jai-dayanand" class="icon brands fa-github"
+								style="text-decoration: none; color: #fff; margin-right: 10px; font-size: 24px; border: none; background: none;"
+								aria-label="GitHub">
+								<span class="label" style="display: none;">GitHub</span>
+							</a>
+						</div>
+
+						<a href="https://github.com/Jai-dayanand" style="color: #fff;">
+							GitHub
+						</a>
+					</li>
+
+				</ul>
+			</article>
+
+
+
+
+			<!-- Elements -->
+			<article id="elements">
+				<h2 class="major">Elements</h2>
+
+				<section>
+					<h3 class="major">Text</h3>
+					<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is
+						<em>emphasized</em>.
+						This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+						This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a
+							href="#">this is a link</a>.
+					</p>
+					<hr />
+					<h2>Heading Level 2</h2>
+					<h3>Heading Level 3</h3>
+					<h4>Heading Level 4</h4>
+					<h5>Heading Level 5</h5>
+					<h6>Heading Level 6</h6>
+					<hr />
+					<h4>Blockquote</h4>
+					<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus
+						euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis
+						iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem
+						ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+					<h4>Preformatted</h4>
+					<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+				</section>
+
+				<section>
+					<h3 class="major">Lists</h3>
+
+					<h4>Unordered</h4>
+					<ul>
+						<li>Dolor pulvinar etiam.</li>
+						<li>Sagittis adipiscing.</li>
+						<li>Felis enim feugiat.</li>
+					</ul>
+
+					<h4>Alternate</h4>
+					<ul class="alt">
+						<li>Dolor pulvinar etiam.</li>
+						<li>Sagittis adipiscing.</li>
+						<li>Felis enim feugiat.</li>
+					</ul>
+
+					<h4>Ordered</h4>
+					<ol>
+						<li>Dolor pulvinar etiam.</li>
+						<li>Etiam vel felis viverra.</li>
+						<li>Felis enim feugiat.</li>
+						<li>Dolor pulvinar etiam.</li>
+						<li>Etiam vel felis lorem.</li>
+						<li>Felis enim et feugiat.</li>
+					</ol>
+					<h4>Icons</h4>
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+					</ul>
+
+					<h4>Actions</h4>
+					<ul class="actions">
+						<li><a href="#" class="button primary">Default</a></li>
+						<li><a href="#" class="button">Default</a></li>
+					</ul>
+					<ul class="actions stacked">
+						<li><a href="#" class="button primary">Default</a></li>
+						<li><a href="#" class="button">Default</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<h3 class="major">Table</h3>
+					<h4>Default</h4>
+					<div class="table-wrapper">
+						<table>
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Description</th>
+									<th>Price</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Item One</td>
+									<td>Ante turpis integer aliquet porttitor.</td>
+									<td>29.99</td>
+								</tr>
+								<tr>
+									<td>Item Two</td>
+									<td>Vis ac commodo adipiscing arcu aliquet.</td>
+									<td>19.99</td>
+								</tr>
+								<tr>
+									<td>Item Three</td>
+									<td> Morbi faucibus arcu accumsan lorem.</td>
+									<td>29.99</td>
+								</tr>
+								<tr>
+									<td>Item Four</td>
+									<td>Vitae integer tempus condimentum.</td>
+									<td>19.99</td>
+								</tr>
+								<tr>
+									<td>Item Five</td>
+									<td>Ante turpis integer aliquet porttitor.</td>
+									<td>29.99</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="2"></td>
+									<td>100.00</td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+
+					<h4>Alternate</h4>
+					<div class="table-wrapper">
+						<table class="alt">
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Description</th>
+									<th>Price</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Item One</td>
+									<td>Ante turpis integer aliquet porttitor.</td>
+									<td>29.99</td>
+								</tr>
+								<tr>
+									<td>Item Two</td>
+									<td>Vis ac commodo adipiscing arcu aliquet.</td>
+									<td>19.99</td>
+								</tr>
+								<tr>
+									<td>Item Three</td>
+									<td> Morbi faucibus arcu accumsan lorem.</td>
+									<td>29.99</td>
+								</tr>
+								<tr>
+									<td>Item Four</td>
+									<td>Vitae integer tempus condimentum.</td>
+									<td>19.99</td>
+								</tr>
+								<tr>
+									<td>Item Five</td>
+									<td>Ante turpis integer aliquet porttitor.</td>
+									<td>29.99</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="2"></td>
+									<td>100.00</td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+				</section>
+
+				<section>
+					<h3 class="major">Buttons</h3>
+					<ul class="actions">
+						<li><a href="#" class="button primary">Primary</a></li>
+						<li><a href="#" class="button">Default</a></li>
+					</ul>
+					<ul class="actions">
+						<li><a href="#" class="button">Default</a></li>
+						<li><a href="#" class="button small">Small</a></li>
+					</ul>
+					<ul class="actions">
+						<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+						<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+					</ul>
+					<ul class="actions">
+						<li><span class="button primary disabled">Disabled</span></li>
+						<li><span class="button disabled">Disabled</span></li>
+					</ul>
+				</section>
+
+				<section>
+					<h3 class="major">Form</h3>
+					<form method="post" action="#">
+						<div class="fields">
+							<div class="field half">
+								<label for="demo-name">Name</label>
+								<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+							</div>
+							<div class="field half">
+								<label for="demo-email">Email</label>
+								<input type="email" name="demo-email" id="demo-email" value=""
+									placeholder="jane@untitled.tld" />
+							</div>
+							<div class="field">
+								<label for="demo-category">Category</label>
+								<select name="demo-category" id="demo-category">
+									<option value="">-</option>
+									<option value="1">Manufacturing</option>
+									<option value="1">Shipping</option>
+									<option value="1">Administration</option>
+									<option value="1">Human Resources</option>
+								</select>
+							</div>
+							<div class="field half">
+								<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+								<label for="demo-priority-low">Low</label>
+							</div>
+							<div class="field half">
+								<input type="radio" id="demo-priority-high" name="demo-priority">
+								<label for="demo-priority-high">High</label>
+							</div>
+							<div class="field half">
+								<input type="checkbox" id="demo-copy" name="demo-copy">
+								<label for="demo-copy">Email me a copy</label>
+							</div>
+							<div class="field half">
+								<input type="checkbox" id="demo-human" name="demo-human" checked>
+								<label for="demo-human">Not a robot</label>
+							</div>
+							<div class="field">
+								<label for="demo-message">Message</label>
+								<textarea name="demo-message" id="demo-message" placeholder="Enter your message"
+									rows="6"></textarea>
+							</div>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" value="Send Message" class="primary" /></li>
+							<li><input type="reset" value="Reset" /></li>
+						</ul>
+					</form>
+				</section>
+
+			</article>
+
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<p class="copyright">&copy;Made by Jai Dayanand❤️</p>
+		</footer>
+
+	</div>
+
+	<!-- BG -->
+	<div id="bg"></div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
